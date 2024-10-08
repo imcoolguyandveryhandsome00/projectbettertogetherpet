@@ -1,0 +1,46 @@
+
+
+.banner-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper_container {
+  width: 100%;
+  max-width: 800px; /* Reduce the maximum width */
+  padding: 2rem;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  max-height: 400px; /* Limit the height of the images */
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+@media (max-width: 500px) {
+  .swiper_container {
+    height: 40rem; /* Adjust height for smaller screens */
+  }
+  .swiper-slide {
+    width: 24rem !important;
+    height: 32rem !important;
+  }
+  .swiper-slide img {
+    width: 24rem !important;
+    height: 32rem !important;
+  }
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block;
+}

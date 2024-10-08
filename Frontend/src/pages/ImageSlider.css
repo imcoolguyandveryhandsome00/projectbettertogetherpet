@@ -1,0 +1,39 @@
+/* ในไฟล์ ImageSlider.css */
+
+.slide-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; /* ให้มุมภาพโค้งมน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้ภาพ */
+}
+
+.slide-image {
+    width: auto;
+    height: auto;
+    object-fit: cover; /* ปรับภาพให้ขนาดพอดีกับ container */
+    transition: transform 0.8s ease-in-out; /* เพิ่มการซูมแบบนุ่มนวล */
+}
+
+.slide-container:hover .slide-image {
+    transform: scale(1.15); /* ซูมเมื่อเลื่อนเมาส์ */
+}
+
+.slick-prev:before, 
+.slick-next:before {
+    color: #fff; /* สีลูกศรเป็นสีขาว */
+    font-size: 30px; /* ขนาดของลูกศร */
+}
+
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #fff; /* สีจุดสไลด์ */
+}
+
+.slick-dots li.slick-active button:before {
+    color: #ffd700; /* เปลี่ยนสีจุดที่เลือกเป็นสีทอง */
+}

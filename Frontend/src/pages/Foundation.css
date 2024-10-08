@@ -1,0 +1,105 @@
+.foundation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* จัดกลางแนวนอน */
+    justify-content: center; /* จัดกลางแนวตั้ง */
+    padding: 20px; /* เพิ่มพื้นที่ภายในกรอบ */
+    margin: 20px; /* เพิ่มระยะห่างภายนอกกรอบ */
+  }
+  
+  .foundation-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .form-container {
+    display: grid; /* ใช้ Grid Layout */
+    grid-template-columns: auto auto; /* ตั้งค่าให้มีสองคอลัมน์ */
+    align-items: center; /* จัดกลางในแนวตั้ง */
+    gap: 10px; /* เพิ่มระยะห่างระหว่าง input และ select */
+    
+  }
+  .search-bar {
+    padding: 5px;
+    background-color: #D9D9D9;
+    font-size: 16px;
+    margin-right: 10px;
+    height: 30px;
+  }
+  
+  .dropdown1 {
+    padding: 5px;
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    font-size: 16px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .frame {
+    border: 2px solid #003366; /* กรอบสีน้ำเงินเข้ม */
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f0f8ff; /* สีพื้นหลังอ่อน */
+  }
+
+  .content {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .logo-image {
+    width: 100px; /* ขนาดของรูปภาพโลโก้ */
+    height: 100px; /* ขนาดของรูปภาพโลโก้ */
+  }
+  .headline {
+    color: #003366; /* ตัวอักษรสีขาว */
+    border-bottom: 2px solid #003366; 
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .details {
+    color: #003366; /* ข้อความสีสีน้ำเงินเข้ม */
+    font-size: 18px;
+  }
+  
+  .button {
+    background-color: #003366; /* ปุ่มสีฟ้าสีน้ำเงินเข้ม */
+    color: #ffffff; /* ตัวอักษรสีขาว */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    right: 20px; /* ตำแหน่งด้านขวา */
+    bottom: 20px; /* ตำแหน่งด้านล่าง */
+  }
+  
+  .button:hover {
+    background-color: #002244; /* เปลี่ยนสีเมื่อ hover */
+  }
+  
+  .footer {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .footer p {
+    margin: 0;
+  }

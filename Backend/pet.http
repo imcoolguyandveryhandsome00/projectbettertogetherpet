@@ -1,0 +1,245 @@
+@hostname = 127.0.0.1
+@port = 5000
+@serverUrl = http://{{hostname}}:{{port}}
+@baseUrl = http://{{hostname}}:{{port}}
+
+###
+
+GET {{baseUrl}}/
+
+###
+GET {{baseUrl}}/status HTTP/1.1
+
+###
+POST {{baseUrl}}/pet
+Content-Type: application/json
+
+{
+    "id" : "1",
+    "name" : "อาโป",
+    "age" : "6",
+    "type" : "panna",
+    "health" : "Good"
+}
+###
+POST {{baseUrl}}/pet
+Content-Type: application/json
+
+{
+    "id" : "2",
+    "name" : "หมี",
+    "age" : "7",
+    "type" : "chiken",
+    "health" : "Very Good"
+}
+###
+POST {{baseUrl}}/pet
+Content-Type: application/json
+
+{
+    "id" : "3",
+    "name" : "ไก่",
+    "age" : "7",
+    "type" : "Cat",
+    "health" : "Very Good"
+}
+###
+POST {{baseUrl}}/pet
+Content-Type: application/json
+
+{
+    "id" : "4",
+    "name" : "หมา",
+    "age" : "4",
+    "type" : "Dog",
+    "health" : "Very Good"
+}
+###
+POST {{baseUrl}}/pet
+Content-Type: application/json
+
+{
+    "id" : "4",
+    "name" : "หมา",
+    "age" : "4",
+    "type" : "Dog",
+    "health" : "Very Good"
+}
+###
+GET {{baseUrl}}/pet
+###
+
+DELETE {{baseUrl}}/Pet
+
+###
+
+POST   {{baseUrl}}/User
+Content-Type: application/json
+
+{
+    "id": "1",
+    "username": "luffyking",
+    "password": "King0123456",
+    "email": "luffyistheking@gmail.com",
+    "address": "grandline007",
+    "first_name": "luffy",
+    "last_name": "Monkey",
+    "birthdate": "09/03/2004",
+    "age": "20",
+    "identification_number": "2",
+    "laser_code": "3",
+    "bank": "กรุงไทย",
+    "bank_branch": "1",
+    "phone": "0642404608",
+     "roles" : "user",
+    "is_admin" : "no"
+}
+###
+POST   {{baseUrl}}/User
+Content-Type: application/json
+
+{
+    "id": "2",
+    "username": "luffyking",
+    "password": "King0123456",
+    "email": "luffyistheking@gmail.com",
+    "address": "grandline007",
+    "first_name": "luffy",
+    "last_name": "Monkey",
+    "birthdate": "09/03/2004",
+    "age": "20",
+    "identification_number": "2",
+    "laser_code": "3",
+    "bank": "กรุงไทย",
+    "bank_branch": "1",
+    "phone": "0642404608",
+     "roles" : "user",
+    "is_admin" : "no"
+}
+
+###
+
+POST   {{baseUrl}}/User
+Content-Type: application/json
+{
+    "id": "3",
+    "username": "panaphat",
+    "password": "film0123456",
+    "email": "panaphat00@gmail.com",
+    "address": "grandline007",
+    "first_name": "luffy",
+    "last_name": "Monkey",
+    "birthdate": "2004-09-03",
+    "age": 20,
+    "identification_number": "7",
+    "laser_code": "8",
+    "bank": "กรุงไทย",
+    "bank_branch": "7",
+    "phone": "0647279209",
+    "roles": ["user"],
+    "is_admin": false
+}
+
+###
+
+POST {{baseUrl}}/foundations
+Content-Type: application/json
+{
+    "name": "มูลนิธิบ้านสงเคราะห์สัตว์พิการ",
+    "content": "ผู้บริจาคสามารถเดินทางมาร่วมทำบุญส่วนตัวได้ รวมทั้งสามารถจัดเตรียมขนม และอาหารสัตว์ สิ่งของเครื่องใช้ของสุนัข และแมว หรือนำทุนทรัพย์มาบริจาคสมทบที่มูลนิธิฯ มีเจ้าหน้าที่ช่วยยกอำนวยความสะดวกตลอ...",
+    "imageUrl": "https://home4animals.org",
+    "isFoodShortage": true,
+    "isFundShortage": true
+}
+
+###
+
+POST {{baseUrl}}/foundations
+Content-Type: application/json
+{
+    "name": "มูลนิธิสันติสุขเพื่อสุนัขและแมวจรจัด",
+    "content": "ให้การดูแล และ พักพิงที่ปลอดภัยแล้ว จุดประสงค์สำคัญของศูนย์คือการทำหมันสุนัขและแมวที่ศูนย์ได้ช่วยเหลือมาตั้งแต่เริ่มต้นจนถึงปัจจุบันปัญหาประชากรสุนัขและแมวเป็นปัญหาที่มีมานานเนื่องจากประชาชนไม่ให้ความสำคัญของการทำหมันเพื่อบรรเทาปัญหาและควบคุมจำนวนประชากรสุนัขและแมวจรจัด...",
+    "imageUrl": "https://www.santisookdogandcat.org/",
+    "isFoodShortage": false,
+    "isFundShortage": true
+}
+
+###
+POST {{baseUrl}}/news
+Content-Type: application/json
+{
+    "title": "ไฟป่าออสเตรเลีย : วิกฤตใหญ่ที่เผาผลาญพื้นที่ 2 รัฐไปแล้วกว่า 30 ล้านไร่ นับแต่กลางปีที่แล้ว",
+    "content": "ออสเตรเลียกำลังเผชิญกับวิกฤตไฟป่าครั้งใหญ่ ซ้ำเติมด้วยอุณหภูมิที่สูงเป็นประวัติการณ์และภัยแล้งที่ดำเนินต่อเนื่องมาหลายเดือน\n\nรัฐนิวเซาท์เวลส์เผชิญกับไฟป่าครั้งรุนแรงที่สุดโดยมีพื้นที่ถูกทำลายไป 4 หมื่น ตร.กม. แล้ว บ้านมากกว่า 1.3 พันหลังพังเสียหาย และผู้คนหลายพันต้องอพยพออกจากพื้นที่\nทั่วประเทศมีผู้เสียชีวิตไป 20 คนแล้ว รวมถึงนักดับเพลิง 3 คน โดยส่วนใหญ่เหตุเกิดที่นิวเซาท์เวลส์\nถ้านับรวมพื้นที่เสียหายในรัฐวิกตอเรียด้วย จะกินพื้นที่ถึงกว่า 4.8 หมื่น ตร.กม. หรือกว่า 30 ล้านไร่...",
+    "image": "https://www.bbc.com/thai/international-50982679"
+}
+
+###
+
+POST {{baseUrl}}/news
+Content-Type: application/json
+{
+    "title": "เจ้าหน้าที่องค์กรอนุรักษ์สัตว์ และตำรวจ นำกำลังบุกบ้านหลังหนึ่งในกรุงเวียงจันทน์ ช่วยลูกหมีดำเอเชียได้ 16 ตัว",
+    "content": "สำนักข่าวต่างประเทศรายงานเมื่อ 24 มี.ค. 2567 ว่า เจ้าหน้าที่จากองค์กรอนุรักษ์ ‘Wildlife’ บุกไปยังบ้านหลังหนึ่งในกรุงเวียงจันทน์ เมืองหลวงของประเทศ สปป.ลาว และสามารถช่วยเหลือลูกหมีดำเอเชีย จำนวน 16 ตัว ที่ถูกจับขังที่นั่นได้สำเร็จ นับเป็นการช่วยเหลือครั้งใหญ่ที่สุดในปีนี้。\n\nหมีดำเอเชีย เป็นหนึ่งในสัตว์ที่ องค์การระหว่างประเทศเพื่อการอนุรักษ์ธรรมชาติ (IUCN) บรรจุในบัญชีแดงว่าเป็นสัตว์เสี่ยงสูญพันธุ์ แต่พวกมันรวมถึงสัตว์อื่น ๆ...",
+    "image": "https://www.thairath.co.th/news/foreign/2773180"
+}
+
+###
+POST {{baseUrl}}/volunteers
+Content-Type: application/json
+{
+    "title": "รับสมัครอาสาสมัครช่วยรับเลี้ยงดูแลสัตว์ชั่วคราว",
+    "content": "เนื้อหา",
+    "images": "",
+    "accomodation": true,
+    "medicine": true,
+    "responsibleForTemporaryCare": true
+}
+###
+POST {{baseUrl}}/volunteers
+Content-Type: application/json
+{
+    "title": "รับสมัครอาสาสมัครนำสัตว์ไปอาบน้ำตัดขน",
+    "content": "เนื้อหา",
+    "images": "",
+    "accomodation": true,
+    "medicine": true,
+    "responsibleForTemporaryCare": true
+}
+###
+POST  {{baseUrl}}/admin
+Content-Type: application/json
+
+{
+    "username" : "luffyistheking",
+    "email" : "lnwza007@gmail.com",
+    "password" : "0123king",
+    "phone" : "0123456789"
+}
+
+###
+
+###
+POST  {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+    "usernameOrEmail" : "luffytheking",
+    "password" : "King0123456"
+}
+
+###
+GET {{baseUrl}}/auth/profile
+Content-Type: application/json
+Authorization: Bearer 
+###
+GET {{baseUrl}}/bothUsers
+Content-Type: application/json
+Authorization: Bearer 
+###
+GET {{baseUrl}}/only-users
+Content-Type: application/json
+Authorization: Bearer 
+### 
+GET {{baseUrl}}/only-admin
+Content-Type: application/json
+Authorization: Bearer 

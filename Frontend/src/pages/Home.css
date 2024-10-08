@@ -1,0 +1,247 @@
+.foundation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  padding: 20px; 
+  margin: 20px; 
+}
+
+.foundation-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center; 
+  gap: 10px; 
+}
+
+.search-bar {
+  padding: 5px;
+  background-color: #FFFF;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.dropdown1 {
+  padding: 5px;
+  background-color: #D9D9D9;
+  border-radius: 15px;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame {
+  border: 2px solid #003366; 
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f0f8ff;
+}
+
+.content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.logo-image {
+  width: 100px;
+  height: 100px;
+}
+
+.headline {
+  color: #003366; 
+  border-bottom: 2px solid #003366; 
+  font-size: 24px;
+  margin: 0;
+}
+
+.details {
+  color: #003366; 
+  font-size: 18px;
+}
+
+.button {
+  background-color: #003366;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  right: 20px;
+  bottom: 20px;
+}
+
+.button:hover {
+  background-color: #002244;
+}
+
+.wrapper {
+  min-height: 100vh; /* กำหนดความสูงขั้นต่ำเท่ากับความสูงของหน้าจอ */
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1; /* กำหนดเนื้อหาให้ยืดหยุ่น */
+}
+
+/* Footer */
+.footer {
+  justify-content: space-between; 
+  background: linear-gradient(to right, #3A5371, #7d9cc3);
+  color: white; 
+  padding: 50px;
+  position: relative; /* ทำให้ footer อยู่ที่ด้านล่างของหน้า */
+  bottom: 0; /* ติดขอบด้านล่าง */
+  width: 100%;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-column {
+  width: 30%; 
+}
+
+.footer-column h3 {
+  color: #FFFF;
+  margin-bottom: 10px;
+}
+
+.footer-column p {
+  margin: 0;
+  color: white;
+}
+
+.login-title-2 {
+  font-size: 36px; /* ขนาดตัวอักษร */
+  line-height: 1.5; /* ความสูงของบรรทัด */
+}
+
+.pets {
+  display: block; /* แสดงในบรรทัดใหม่ */
+  font-size: 36px; /* ขนาดตัวอักษรสำหรับ Pets */
+  margin-left: 230px;
+  margin-top: -10px;
+}
+
+
+.login-title-2 {
+  color: #3A5371;
+  text-align: center;
+  font-size: 36px;
+}
+
+/* NewsCard styles */
+.news-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.news-heading {
+  color: #e74c3c;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.news-images {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-image-top,
+.news-image-bottom {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.news-image-top {
+  margin-bottom: 10px;
+}
+
+.news-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.news-item {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.news-item h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.news-item p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.read-more-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #3498db;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.read-more-button:hover {
+  background-color: #2980b9;
+}
+
+.image-section {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.image-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px; 
+}
+
+.image-item {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.image-heading {
+  width: 50px;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 10px;
+  background-color: #3a5371;
+  padding: 10px;
+  border-radius: 0px 8px 8px 0px;
+}

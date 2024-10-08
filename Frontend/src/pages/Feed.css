@@ -1,0 +1,136 @@
+/* ตั้งค่าโดยรวม */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* คอนเทนเนอร์หลัก */
+.feed-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ฟอร์มโพสต์ */
+.post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%; /* ให้ฟอร์มมีความกว้าง 100% ของคอนเทนเนอร์ */
+  max-width: 600px; /* จำกัดความกว้างสูงสุดของฟอร์ม */
+  margin: 0 auto; /* จัดกึ่งกลางฟอร์ม */
+}
+
+.post-form textarea {
+  width: 70%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.post-form input[type="file"] {
+  margin-bottom: 10px;
+}
+
+
+
+.post-form button {
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 80px;
+}
+
+.post-form button:hover {
+  background-color: #0056b3;
+}
+
+.post-form .button-container {
+  text-align: center; 
+}
+
+.post {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.post h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.timestamp {
+  font-size: 12px;
+  color: #666;
+}
+
+.post p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.post img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.post-list .post {
+  background-color: #f0f2f5;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.preview-image img {
+  margin-top: 10px;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* สไตล์โพสต์ที่คุณต้องการเพิ่มเติม */
+.postone {
+  width: 990px;
+  height: 660px;
+  background-color: #F3F4F8;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 17%;
+  margin-top: 50px;
+  border: 2px solid #e8e9ed;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profilepost {
+  border-radius: 50%;
+  width: 100px;
+  float: left;
+  margin: 5px;
+  margin-right: 10px;
+}
